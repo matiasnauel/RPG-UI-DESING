@@ -52,6 +52,10 @@
     }
     /*Header*/
     
+    .cabezera {
+        background-color: #ff8000c7;
+    }
+    
     .avatar {
         vertical-align: middle;
         width: 40px;
