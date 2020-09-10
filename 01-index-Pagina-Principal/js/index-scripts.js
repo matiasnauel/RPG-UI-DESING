@@ -32,6 +32,7 @@ function Favorito(id) {
 }
 //Metodo utilizado en la sección de categoria para expandir las imagenes svg
 function ExpandirCategoria(id1) {
+    console.log(id1);
     const Expandir = document.getElementById(id1);
     Expandir.style.transition = "1s";
     Expandir.style.webkitTransform = "scale(1.1)";

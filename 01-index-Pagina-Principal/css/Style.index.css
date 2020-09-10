@@ -14,7 +14,7 @@
     body {
         min-height: 100%;
         background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-        font-family: 'Roboto Condensed', sans-serif;
+        font-family: 'Roboto', sans-serif;
     }
     
     img {
@@ -53,7 +53,8 @@
     /*Header*/
     
     .cabezera {
-        background-color: #ff8000c7;
+        background-color: rgba(102, 51, 153, 0.993);
+        ;
     }
     
     .avatar {
@@ -64,7 +65,7 @@
         cursor: pointer;
         background-color: #ffff;
         border: solid 2px transparent;
-        color: #ff8000c7;
+        color: rgba(102, 51, 153, 0.993);
     }
     
     .MiCarrito {
@@ -98,7 +99,19 @@
     .btn-outline-success:hover {
         background-color: rebeccapurple;
     }
+    
+    .cantidadCarrito {
+        color: #fff;
+    }
+    
+    .precioCarrito {
+        color: #ffff;
+    }
     /*Barra*/
+    
+    .efect-hover:hover {
+        color: #ffff;
+    }
     /*Slider*/
     
     .container-slider {
@@ -116,6 +129,7 @@
         margin-bottom: 1rem;
         background-color: #ffff;
         border-radius: 5px;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     
     @media (min-width:768px) {
@@ -136,6 +150,18 @@
         padding-right: 10px;
     }
     /*Main*/
+    
+    .lSAction>.lSPrev {
+        background-position: 0 0;
+        left: 10px;
+        color: yellow!important;
+    }
+    
+    .lSAction>.lSNext {
+        background-position: -32px 0;
+        right: 10px;
+        color: yellow!important;
+    }
     
     .contenidio-principal {
         padding-bottom: 81px;
@@ -252,10 +278,119 @@
         margin-left: 30px;
         word-wrap: break-word;
     }
+    
+    .seccion-marcas {
+        display: grid;
+        margin-bottom: 20px;
+        grid-template-columns: auto auto auto auto auto auto;
+        column-gap: 104px;
+    }
+    
+    .marca1 {
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        transition: 1s;
+        background-image: url(/img/lenovo_2060.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .marca1:hover {
+        transform: scale(1.1);
+    }
+    
+    .marca2 {
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        transition: 1s;
+        background-image: url(/img/hp_1968.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .marca2:hover {
+        transform: scale(1.1);
+    }
+    
+    .marca3 {
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        transition: 1s;
+        background-image: url(/img/dell_2117.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .marca3:hover {
+        transform: scale(1.1);
+    }
+    
+    .marca4 {
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        transition: 1s;
+        background-image: url(/img/asus_2064.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .marca4:hover {
+        transform: scale(1.1);
+    }
+    
+    .marca5 {
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        transition: 1s;
+        background-image: url(/img/compaq_2063.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .marca5:hover {
+        transform: scale(1.1);
+    }
+    
+    .marca6 {
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        transition: 1s;
+        background-image: url(/img/amd_logo_icon_145504.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    .marca6:hover {
+        transform: scale(1.1);
+    }
     /*Before footer*/
     
     .before-footer {
-        background-color: rgba(228, 157, 25, 0.383);
+        background-color: rgba(102, 51, 153, 0.794);
     }
     
     .container-footer {
@@ -292,10 +427,17 @@
     .row-local-2 {
         margin-bottom: 20px;
     }
+    
+    .gps-local {
+        height: 200px;
+        width: 500px;
+        margin-bottom: 40px;
+        border-radius: 2%;
+    }
     /*Footer*/
     
     .footer {
-        background-color: #ff8000c7;
+        background-color: rgba(102, 51, 153, 0.993);
         padding: 1rem 0;
         margin-top: 2rem;
         width: 100%;
