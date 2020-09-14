@@ -47,7 +47,8 @@
     }
     
     .w-parrafo {
-        font-size: 12px;
+       
+        font-size: 16px;
         margin-bottom: 0;
     }
     /*Header*/
@@ -109,8 +110,23 @@
     }
     /*Barra*/
     
-    .efect-hover:hover {
-        color: #ffff;
+    .efect-hover{
+        position: relative;
+    }
+    .efect-hover::before{
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color:  rgba(102, 51, 153, 0.993);
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        transition: all .1s;
+
+    }
+    .efect-hover:hover::before{
+        width: 100%;
     }
     /*Slider*/
     
@@ -140,6 +156,8 @@
             flex: 1;
         }
     }
+    
+    
     /*Slider*/
     
     .flechas {
