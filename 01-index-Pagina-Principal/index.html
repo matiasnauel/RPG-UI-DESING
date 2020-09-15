@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.index.css">
-    <link rel="stylesheet" href="css/SliderStyle.css">
+    <link rel="stylesheet" href="css/SliderStyle.css?1.0">
     <link rel="stylesheet" href="css/lightslider.css">
 
 
@@ -59,9 +59,9 @@
                                         <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
                                       </svg>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Mi cuenta</a>
-                                        <a class="dropdown-item" href="#">Inciar sesión</a>
-                                        <a class="dropdown-item" href="#">Registrarse</a>
+                                        <a class="dropdown-item" href="#" type="button" data-toggle="modal" data-target="#exampleModal">Mi cuenta</a>
+                                        <a class="dropdown-item" href="#" id="InciarSesion" >Inciar sesión</a>
+                                        <a class="dropdown-item" href="#" id="Registrarse">Registrarse</a>
                                     </div>
                                 </div>
 
@@ -87,17 +87,19 @@
             <nav class="navegador container ">
                 <div class="d-flex justify-content-around contenedor-navegador">
 
-
-                    <div class="dropdown">
-                        <a type="button" class=" nav-link dropdown-toggle efect-hover" data-toggle="dropdown">
-                            TODAS LAS CATEGORIAS
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Opcion1</a>
-                            <a class="dropdown-item" href="#">Opcion2</a>
-                            <a class="dropdown-item" href="#">Opcion3</a>
-                        </div>
-                    </div>
+                    <li id="categorias-desplegable" class="categoriasDesplegables"><a href="#" class="p-2 btn efect-hover" style="font-weight: 300; ">TODAS LAS CATEGORIAS</a>
+                        <ul id="desplegable" class="desplegable">
+                            <li><a href="">Notebook</a></li>
+                            <li><a href="">Procesadores</a></li>
+                            <li><a href="">Auriculares</a></li>
+                            <li><a href="">Monitores</a></li>
+                            <li><a href="">Tablets</a></li>
+                            <li><a href="">Gabinetes</a></li>
+                            <li><a href="">Celulares</a></li>
+                            <li><a href="">Teclados</a></li>
+                        </ul>
+                    
+                    </li>
 
 
                     <a href="# " class="p-2 btn  efect-hover " style="font-weight: 300; "> PRODUCTOS</a>
@@ -135,7 +137,7 @@
             </div>
         </div>
         <!--Carrusel-->
-        <div class="servicios container ">
+        <div class="servicios container " >
             <div class="contenedor-servicios ">
 
                 <div class="servicios ">
@@ -482,6 +484,7 @@
 
         </footer>
         <!--footer-->
+
     </div>
 
 
@@ -498,6 +501,7 @@
     <script type="text/javascript " src="js/Jquery.js "></script>
     <!--lightslider.js--------------->
     <script type="text/javascript " src="js/lightslider.js "></script>
+    <!--Map-->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
     <!--script-link----------->

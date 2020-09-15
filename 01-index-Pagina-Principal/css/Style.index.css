@@ -55,7 +55,7 @@
     
     .cabezera {
         background-color: rgba(102, 51, 153, 0.993);
-        ;
+        
     }
     
     .avatar {
@@ -108,6 +108,49 @@
     .precioCarrito {
         color: #ffff;
     }
+    .categoriasDesplegables{
+        list-style: none;
+      
+    }
+   
+    .contenedor-navegador .desplegable{
+        display: none;
+        list-style: none;
+        text-decoration: none;
+        min-width: 100px;
+        position: absolute;
+        z-index: 1;
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+        min-width: 215.69px;
+        line-height: 30px;
+      
+    }
+    .desplegable{
+        list-style:none;
+        margin:0; 
+        padding: 0;
+        border:0;
+        text-align: center;
+    }
+    .desplegable a{
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+       
+    }
+    
+    .contenedor-navegador .categoriasDesplegables:hover .desplegable{
+        display: block;
+        
+    }
+    .desplegable a:hover{
+        text-decoration: none;
+
+        color:#fff;
+        background-color:  rgba(102, 51, 153, 0.993);
+    }
+ 
+    
     /*Barra*/
     
     .efect-hover{
@@ -129,10 +172,12 @@
         width: 100%;
     }
     /*Slider*/
-    
+  
     .container-slider {
         max-width: 1300px;
         margin: 0 auto;
+       
+    
     }
     
     .navegador a {
@@ -146,6 +191,8 @@
         background-color: #ffff;
         border-radius: 5px;
         font-family: 'Roboto Condensed', sans-serif;
+      
+      
     }
     
     @media (min-width:768px) {
@@ -470,4 +517,14 @@
         font-size: 1.2rem;
         text-align: center;
     }
-    /*EFECTO DEL LIKE CORAZON*/
+   /*Login*/
+   
+.btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
